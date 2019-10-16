@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Manipulating Arrays of Names</title>
+
+	<!-- JQuery required for BootStrap to work -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+   	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+		  integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	
+	<script src="arrayNames.js"></script>
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <h4>The purpose of this program is to work with some larger arrays and use<br>
+            array methods and loops to identify fictitious honor graduates.</h4>
+        <form class="form-inline" name="input_form">
+          <div class="form-group">
+            <label class="sr-only" for="totalStudents">Total Students</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="total_students" placeholder="Number of students">
+                </div>
+          </div>
+                    Enter the total number of student records to generate (max of 100)
+        </form>
+        <br>
+        
+        <button type="button" id="cum_laude" class="btn">Cum Laude Grads</button>
+        <button type="button" id="summa_laude" class="btn">Summa Cum Laude Grads</button>
+        <button type="button" id="magna_laude" class="btn">Magna Cum Laude Grads</button>
+        <br><br>
+        <form class="form" name="output_form1">
+           <div class="form-group">
+             <textarea class="form-control" id="output" rows="10" placeholder="Enter number of students, click a button, and look here" disabled=true></textarea>
+           </div>
+        </form>
+    </div>
+ 
+    
+</body>
+</html>
